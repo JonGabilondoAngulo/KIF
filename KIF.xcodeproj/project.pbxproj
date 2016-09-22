@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03A89AB51D93E17E000AB035 /* libXCTest-Stub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A89AB21D93E15B000AB035 /* libXCTest-Stub.a */; };
 		0E27A9EE1B45B53D00A6DE6E /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AD81F91AA180B900B369FD /* IOKit.framework */; };
 		0EAA1C131B4B371700FFB2FB /* IOHIDEvent+KIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EAA1C111B4B371700FFB2FB /* IOHIDEvent+KIF.h */; };
 		0EAA1C141B4B371700FFB2FB /* IOHIDEvent+KIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA1C121B4B371700FFB2FB /* IOHIDEvent+KIF.m */; };
@@ -172,7 +173,6 @@
 		EABD46C51857A0F300A5F081 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB60ECC4177F8C83005A041A /* CoreGraphics.framework */; };
 		EABD46C71857A0F300A5F081 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB60ECF2177F8DB3005A041A /* InfoPlist.strings */; };
 		EABD46CF1857A15400A5F081 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD46AB1857A0EB00A5F081 /* XCTest.framework */; };
-		EABD46D21857A24E00A5F081 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD46AB1857A0EB00A5F081 /* XCTest.framework */; };
 		EABD46D61858C8ED00A5F081 /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD46AA1857A0C700A5F081 /* libKIF.a */; };
 		EAC8096A1864F19C000E819F /* NSException-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC809681864F19C000E819F /* NSException-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAC8096B1864F19C000E819F /* NSException-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC809691864F19C000E819F /* NSException-KIFAdditions.m */; };
@@ -248,6 +248,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		03A89AB11D93E15B000AB035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03A89AAD1D93E15A000AB035 /* XCTest-Stub.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A89A981D93CD38000AB035;
+			remoteInfo = "XCTest-Stub";
+		};
+		03A89AB31D93E172000AB035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03A89AAD1D93E15A000AB035 /* XCTest-Stub.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 03A89A971D93CD38000AB035;
+			remoteInfo = "XCTest-Stub";
+		};
 		EABD46AF1857A0F300A5F081 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AAB0725F139719AC008AF393 /* Project object */;
@@ -265,6 +279,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03A89AAD1D93E15A000AB035 /* XCTest-Stub.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "XCTest-Stub.xcodeproj"; path = "XCTest-Stub/XCTest-Stub.xcodeproj"; sourceTree = "<group>"; };
 		0EAA1C111B4B371700FFB2FB /* IOHIDEvent+KIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IOHIDEvent+KIF.h"; sourceTree = "<group>"; };
 		0EAA1C121B4B371700FFB2FB /* IOHIDEvent+KIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IOHIDEvent+KIF.m"; sourceTree = "<group>"; };
 		2CDEE1CA181DBED200DF6E63 /* PickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerController.m; sourceTree = "<group>"; };
@@ -461,8 +476,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A89AB51D93E17E000AB035 /* libXCTest-Stub.a in Frameworks */,
 				85DB94721C5A5D430025F83E /* QuartzCore.framework in Frameworks */,
-				EABD46D21857A24E00A5F081 /* XCTest.framework in Frameworks */,
 				EABD468E1857A0C700A5F081 /* Foundation.framework in Frameworks */,
 				EABD468F1857A0C700A5F081 /* UIKit.framework in Frameworks */,
 				0E27A9EE1B45B53D00A6DE6E /* IOKit.framework in Frameworks */,
@@ -514,6 +529,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03A89AAE1D93E15A000AB035 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03A89AB21D93E15B000AB035 /* libXCTest-Stub.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9CC9673C1AD4B1B600576D13 /* KIF Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -535,6 +558,7 @@
 		AAB0725D139719AC008AF393 = {
 			isa = PBXGroup;
 			children = (
+				03A89AAD1D93E15A000AB035 /* XCTest-Stub.xcodeproj */,
 				EB60ECBC177F8C51005A041A /* KIF */,
 				EB60ECC6177F8C83005A041A /* Test Host */,
 				EB60ECEF177F8DB3005A041A /* KIF Tests */,
@@ -985,6 +1009,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				03A89AB41D93E172000AB035 /* PBXTargetDependency */,
 			);
 			name = KIF;
 			productName = KIFTestCase;
@@ -1093,6 +1118,12 @@
 			mainGroup = AAB0725D139719AC008AF393;
 			productRefGroup = AAB07269139719AC008AF393 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 03A89AAE1D93E15A000AB035 /* Products */;
+					ProjectRef = 03A89AAD1D93E15A000AB035 /* XCTest-Stub.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EABD46791857A0C700A5F081 /* KIF */,
@@ -1105,6 +1136,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		03A89AB21D93E15B000AB035 /* libXCTest-Stub.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libXCTest-Stub.a";
+			remoteRef = 03A89AB11D93E15B000AB035 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9CC967391AD4B1B600576D13 /* Resources */ = {
@@ -1334,6 +1375,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		03A89AB41D93E172000AB035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XCTest-Stub";
+			targetProxy = 03A89AB31D93E172000AB035 /* PBXContainerItemProxy */;
+		};
 		EABD46AE1857A0F300A5F081 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EB60ECC0177F8C83005A041A /* Test Host */;

@@ -1,0 +1,3 @@
+[submodule "XCTest-Stub"]
+	path = XCTest-Stub
+	url = https://github.com/JonGabilondoAngulo/XCTest-Stub.git
