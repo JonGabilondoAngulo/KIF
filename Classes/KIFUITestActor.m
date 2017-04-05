@@ -299,6 +299,33 @@
     }];
 }
 
+- (void)longPressScreenAtPoint:(CGPoint)screenPoint duration:(NSTimeInterval)duration
+{
+    [self runBlock:^KIFTestStepResult(NSError **error) {
+        
+        // Try all the windows until we get one back that actually has something in it at the given point
+        UIView *view = nil;
+        for (UIWindow *window in [[[UIApplication sharedApplication] windowsWithKeyWindow] reverseObjectEnumerator]) {
+            CGPoint windowPoint = [window convertPoint:screenPoint fromView:nil];
+            view = [window hitTest:windowPoint withEvent:nil];
+            
+            // If we hit the window itself, then skip it.
+            if (view != window && view != nil) {
+                break;
+            }
+        }
+        
+        KIFTestWaitCondition(view, error, @"No view was found at the point %@", NSStringFromCGPoint(screenPoint));
+        
+        // This is mostly redundant of the test in _accessibilityElementWithLabel:
+        CGPoint viewPoint = [view convertPoint:screenPoint fromView:nil];
+        [view longPressAtPoint:viewPoint duration:duration];
+        
+        return KIFTestStepResultSuccess;
+    }];
+}
+
+
 - (void)longPressViewWithAccessibilityLabel:(NSString *)label duration:(NSTimeInterval)duration;
 {
     [self longPressViewWithAccessibilityLabel:label value:nil traits:UIAccessibilityTraitNone duration:duration];
