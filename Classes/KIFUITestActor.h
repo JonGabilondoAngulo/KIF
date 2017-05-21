@@ -306,7 +306,7 @@ typedef NS_ENUM(NSUInteger, KIFPullToRefreshTiming) {
 - (void)tapScreenAtPoint:(CGPoint)screenPoint;
 
 - (void)longPressScreenAtPoint:(CGPoint)screenPoint duration:(NSTimeInterval)duration;
-- (void)swipeScreenAtPoint:(CGPoint)screenPoint direction:(KIFSwipeDirection)direction;
+//- (void)swipeScreenAtPoint:(CGPoint)screenPoint direction:(KIFSwipeDirection)direction;
 
 /*!
  @abstract Performs a long press on a particular view in the view hierarchy.
